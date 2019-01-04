@@ -1,8 +1,7 @@
 /**
-     * ÅĞ¶Ï±í´ïÊ½
-     *
-     * ÎªÁË°´µÈºÅÊÇ·ñ½øĞĞÔËËã
-     * ÒÔ¼°³öÏÖÁ½¸öÔËËã·û£¨µÚÒ»¸ö²ÎÊıÈç¹ûÎª¸ºÊıµÄ·ûºÅ²»¼Æ£©ÏÈ½øĞĞÔËËãÔÙÌí¼ÓÔËËã·û
+     * åˆ¤æ–­è¡¨è¾¾å¼
+     * ä¸ºäº†æŒ‰ç­‰å·æ˜¯å¦è¿›è¡Œè¿ç®—
+     * ä»¥åŠå‡ºç°ä¸¤ä¸ªè¿ç®—ç¬¦ï¼ˆç¬¬ä¸€ä¸ªå‚æ•°å¦‚æœä¸ºè´Ÿæ•°çš„ç¬¦å·ä¸è®¡ï¼‰å…ˆè¿›è¡Œè¿ç®—å†æ·»åŠ è¿ç®—ç¬¦
      */
     private boolean judgeExpression() {
 
@@ -14,20 +13,20 @@
 
             if (existedText.contains("+")) {
                 /**
-                 * ÏÈ»ñÈ¡µÚ¶ş¸ö²ÎÊı
+                 * å…ˆè·å–ç¬¬äºŒä¸ªå‚æ•°
                  */
                 tempParam2 = existedText.substring(existedText.indexOf("+") + 1);
                 /**
-                 * Èç¹ûµÚ¶ş¸ö²ÎÊıÎª¿Õ£¬±í´ïÊ½²»³ÉÁ¢
+                 * å¦‚æœç¬¬äºŒä¸ªå‚æ•°ä¸ºç©ºï¼Œè¡¨è¾¾å¼ä¸æˆç«‹
                  */
                 if (tempParam2.equals("")) {
                     return false;
                 } else {
                     return true;
                 }
-            } else if (existedText.contains("¡Á")) {
+            } else if (existedText.contains("Ã—")) {
 
-                tempParam2 = existedText.substring(existedText.indexOf("¡Á") + 1);
+                tempParam2 = existedText.substring(existedText.indexOf("Ã—") + 1);
 
                 if (tempParam2.equals("")) {
                     return false;
@@ -35,9 +34,9 @@
                     return true;
                 }
 
-            } else if (existedText.contains("¡Â")) {
+            } else if (existedText.contains("Ã·")) {
 
-                tempParam2 = existedText.substring(existedText.indexOf("¡Â") + 1);
+                tempParam2 = existedText.substring(existedText.indexOf("Ã·") + 1);
 
                 if (tempParam2.equals("")) {
                     return false;
@@ -48,9 +47,9 @@
             } else if (existedText.contains("-")) {
 
                 /**
-                 * ÕâÀïÊÇÒÔ×îºóÒ»¸ö - ºÅÎª·Ö¸ôÈ¥È¡³öÁ½¸ö²ÎÊı
-                 * ½øµ½Õâ¸ö·½·¨£¬±ØĞëÂú×ãÓĞÔËËã¹«Ê½
-                 * ¶øÓÖ±ÜÃâÁËµÚÒ»¸ö²ÎÊıÊÇ¸ºÊıµÄÇé¿ö
+                 * è¿™é‡Œæ˜¯ä»¥æœ€åä¸€ä¸ª - å·ä¸ºåˆ†éš”å»å–å‡ºä¸¤ä¸ªå‚æ•°
+                 * è¿›åˆ°è¿™ä¸ªæ–¹æ³•ï¼Œå¿…é¡»æ»¡è¶³æœ‰è¿ç®—å…¬å¼
+                 * è€Œåˆé¿å…äº†ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯è´Ÿæ•°çš„æƒ…å†µ
                  */
                 tempParam2 = existedText.substring(existedText.lastIndexOf("-") + 1);
 
