@@ -13,5 +13,5 @@
             tempResult = existedText;
         }
 
-        return tempResult;
+        return tempResult；
     }
