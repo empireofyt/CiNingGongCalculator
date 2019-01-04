@@ -1,19 +1,17 @@
 /**
-             * ÔËËã·û
+             * è¿ç®—ç¬¦
              */
             case R.id.plus_btn:
                 /**
-                 * ÅĞ¶ÏÒÑÓĞµÄ×Ö·ûÊÇ·ñÊÇ¿ÆÑ§¼ÆÊı
-                 * ÊÇ ÖÃÁã
-                 * ·ñ ½øĞĞÏÂÒ»²½
-                 *
-                 * ÅĞ¶Ï±í´ïÊ½ÊÇ·ñ¿ÉÒÔ½øĞĞ¼ÆËã
-                 * ÊÇ ÏÈ¼ÆËãÔÙÌí¼Ó×Ö·û
-                 * ·ñ Ìí¼Ó×Ö·û
-                 *
-                 * ÅĞ¶Ï¼ÆËãºóµÄ×Ö·ûÊÇ·ñÊÇ error
-                 * ÊÇ ÖÃÁã
-                 * ·ñ Ìí¼ÓÔËËã·û
+                 * åˆ¤æ–­å·²æœ‰çš„å­—ç¬¦æ˜¯å¦æ˜¯ç§‘å­¦è®¡æ•°
+                 * æ˜¯ ç½®é›¶
+                 * å¦ è¿›è¡Œä¸‹ä¸€æ­¥
+                 * åˆ¤æ–­è¡¨è¾¾å¼æ˜¯å¦å¯ä»¥è¿›è¡Œè®¡ç®—
+                 * æ˜¯ å…ˆè®¡ç®—å†æ·»åŠ å­—ç¬¦
+                 * å¦ æ·»åŠ å­—ç¬¦
+                 * åˆ¤æ–­è®¡ç®—åçš„å­—ç¬¦æ˜¯å¦æ˜¯ error
+                 * æ˜¯ ç½®é›¶
+                 * å¦ æ·»åŠ è¿ç®—ç¬¦
                  */
                 if (!existedText.contains("e")) {
 
@@ -32,10 +30,10 @@
 
                         if ((existedText.substring(existedText.length() - 1)).equals("-")) {
                             existedText = existedText.replace("-", "+");
-                        } else if ((existedText.substring(existedText.length() - 1)).equals("¡Á")) {
-                            existedText = existedText.replace("¡Á", "+");
-                        } else if ((existedText.substring(existedText.length() - 1)).equals("¡Â")) {
-                            existedText = existedText.replace("¡Â", "+");
+                        } else if ((existedText.substring(existedText.length() - 1)).equals("Ã—")) {
+                            existedText = existedText.replace("Ã—", "+");
+                        } else if ((existedText.substring(existedText.length() - 1)).equals("Ã·")) {
+                            existedText = existedText.replace("Ã·", "+");
                         } else if (!(existedText.substring(existedText.length() - 1)).equals("+")) {
                             existedText += "+";
                         }
