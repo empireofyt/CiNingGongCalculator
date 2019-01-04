@@ -1,5 +1,5 @@
 /**
-             * Êý×Ö
+             * æ•°å­—
              */
             case R.id.num_zero:
                 existedText = isOverRange(existedText,"0");
