@@ -1,20 +1,20 @@
  /**
-     * ½øĞĞÔËËã£¬µÃµ½½á¹û
-     * @return  ·µ»Ø½á¹û
+     * è¿›è¡Œè¿ç®—
+     * @return  è¿”å›ç»“æœ
      */
     private String getResult() {
 
         /**
-         * ½á¹û
+         * ç»“æœ
          */
         String tempResult = null;
         /**
-         * Á½¸öStringÀàĞÍµÄ²ÎÊı
+         * ä¸¤ä¸ªStringç±»å‹çš„å‚æ•°
          */
         String param1 = null;
         String param2 = null;
         /**
-         * ×ª»»ºóµÄÁ½¸ödoubleÀàĞÍµÄ²ÎÊı
+         * è½¬æ¢åçš„ä¸¤ä¸ªdoubleç±»å‹çš„å‚æ•°
          */
         double arg1 = 0;
         double arg2 = 0;
