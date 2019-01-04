@@ -1,17 +1,17 @@
 case R.id.dot_btn:
                 /**
-                 * ÅĞ¶ÏÊÇ·ñÔËËã¹ı
-                 * ·ñ
-                 *   ÅĞ¶ÏÊÇ·ñÓĞÔËËã·û£¬ÓĞ ÅĞ¶ÏÔËËã·ûÖ®ºóµÄÊı×Ö£¬ÎŞ ÅĞ¶ÏÕû¸öÊı×Ö
-                 *   ÅĞ¶ÏÊı×ÖÊÇ·ñ¹ı³¤£¬ÊÇÔò²»ÄÜÌí¼ÓĞ¡Êıµã£¬·ñÔò¿ÉÒÔÌí¼Ó
-                 *   ÅĞ¶ÏÒÑ¾­´æÔÚµÄÊı×ÖÀïÊÇ·ñÓĞĞ¡Êıµã
-                 * ÊÇ
-                 *   ×Ö·û´®ÖÃÎª 0.
+                 * åˆ¤æ–­æ˜¯å¦è¿ç®—è¿‡
+                 * å¦
+                 *   åˆ¤æ–­æ˜¯å¦æœ‰è¿ç®—ç¬¦ï¼Œæœ‰åˆ™åˆ¤æ–­è¿ç®—ç¬¦ä¹‹åçš„æ•°å­—ï¼Œæ— åˆ™åˆ¤æ–­æ•´ä¸ªæ•°å­—
+                 *   åˆ¤æ–­æ•°å­—æ˜¯å¦è¿‡é•¿ï¼Œæ˜¯ ä¸èƒ½æ·»åŠ å°æ•°ç‚¹ï¼Œå¦ å¯ä»¥æ·»åŠ 
+                 *   åˆ¤æ–­å·²ç»å­˜åœ¨çš„æ•°å­—é‡Œæ˜¯å¦æœ‰å°æ•°ç‚¹
+                 * æ˜¯
+                 *   å­—ç¬¦ä¸²ç½®ä¸º 0.
                  */
                 if (!isCounted){
 
                     if (existedText.contains("+") || existedText.contains("-") ||
-                            existedText.contains("¡Á") || existedText.contains("¡Â") ){
+                            existedText.contains("Ã—") || existedText.contains("Ã·") ){
 
                         String param1 = null;
                         String param2 = null;
@@ -22,12 +22,12 @@ case R.id.dot_btn:
                         } else if (existedText.contains("-")) {
                             param1 = existedText.substring(0, existedText.indexOf("-"));
                             param2 = existedText.substring(existedText.indexOf("-") + 1);
-                        } else if (existedText.contains("¡Á")) {
-                            param1 = existedText.substring(0, existedText.indexOf("¡Á"));
-                            param2 = existedText.substring(existedText.indexOf("¡Á") + 1);
-                        } else if (existedText.contains("¡Â")) {
-                            param1 = existedText.substring(0, existedText.indexOf("¡Â"));
-                            param2 = existedText.substring(existedText.indexOf("¡Â") + 1);
+                        } else if (existedText.contains("Ã—")) {
+                            param1 = existedText.substring(0, existedText.indexOf("Ã—"));
+                            param2 = existedText.substring(existedText.indexOf("Ã—") + 1);
+                        } else if (existedText.contains("Ã·")) {
+                            param1 = existedText.substring(0, existedText.indexOf("Ã·"));
+                            param2 = existedText.substring(existedText.indexOf("Ã·") + 1);
                         }
                         Log.d("Anonymous param1",param1);
                         Log.d("Anonymous param2",param2);
