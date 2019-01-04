@@ -17,17 +17,3 @@
                 existedText = isOverRange(existedText,"4");
                 break;
             case R.id.num_five:
-                existedText = isOverRange(existedText,"5");
-                break;
-            case R.id.num_six:
-                existedText = isOverRange(existedText,"6");
-                break;
-            case R.id.num_seven:
-                existedText = isOverRange(existedText,"7");
-                break;
-            case R.id.num_eight:
-                existedText = isOverRange(existedText,"8");
-                break;
-            case R.id.num_nine:
-                existedText = isOverRange(existedText,"9");
-                break;
