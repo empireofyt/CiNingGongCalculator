@@ -1,6 +1,6 @@
 /**
-                 * �ַ������ȴ��� 0 ʱ�Ž�ȡ�ַ���
-                 * �������Ϊ 1����ֱ�Ӱ��ַ�������Ϊ 0
+                 * 字符串长度大于 0 时才能截取字符串
+                 * 如果长度为 1，则直接把字符串设置为 0
                  */
                 if (existedText.equals("error")){
                     existedText = "0";
@@ -17,7 +17,7 @@
                 break;
         }
         /**
-         * ������ʾ
+         * 设置显示
          */
         mResultText.setText(existedText);
    
