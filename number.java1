@@ -16,4 +16,3 @@
             case R.id.num_four:
                 existedText = isOverRange(existedText,"4");
                 break;
-            case R.id.num_five:
