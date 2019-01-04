@@ -16,7 +16,7 @@
                 existedText = "0";
                 break;
         }
-        /**
+         /**
          * 设置显示
          */
         mResultText.setText(existedText);
