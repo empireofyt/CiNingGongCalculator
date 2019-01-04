@@ -1,22 +1,20 @@
 /**
-     * È¡µÃÅĞ¶ÏÌõ¼ş
+     * å–å¾—åˆ¤æ–­æ¡ä»¶
      */
     private void getCondition() {
         /**
-         * ÒÔ¸ººÅ¿ªÍ·£¬ÇÒÔËËã·û²»ÊÇÊÇ¼õºÅ
-         * ÀıÈç£º-21¡Á2
+         * ä»¥è´Ÿå·å¼€å¤´ï¼Œä¸”è¿ç®—ç¬¦ä¸æ˜¯æ˜¯å‡å·
          */
         startWithOperator = existedText.startsWith("-") && ( existedText.contains("+") ||
-                existedText.contains("¡Á") || existedText.contains("¡Â") );
+                existedText.contains("Ã—") || existedText.contains("Ã·") );
         /**
-         * ÒÔ¸ººÅ¿ªÍ·£¬ÇÒÔËËã·ûÊÇ¼õºÅ
-         * ÀıÈç£º-21-2
+         * ä»¥è´Ÿå·å¼€å¤´ï¼Œä¸”è¿ç®—ç¬¦æ˜¯å‡å·
+         * ä¾‹å¦‚ï¼š-21-2
          */
         startWithSubtract = existedText.startsWith("-") && ( existedText.lastIndexOf("-") != 0 );
         /**
-         * ²»ÒÔ¸ººÅ¿ªÍ·£¬ÇÒ°üº¬ÔËËã·û
-         * ÀıÈç£º21-2
+         * ä¸ä»¥è´Ÿå·å¼€å¤´ï¼Œä¸”åŒ…å«è¿ç®—ç¬¦
          */
         noStartWithOperator = !existedText.startsWith("-") && ( existedText.contains("+") ||
-                existedText.contains("-") || existedText.contains("¡Á") || existedText.contains("¡Â"));
+                existedText.contains("-") || existedText.contains("Ã—") || existedText.contains("Ã·"));
     }
