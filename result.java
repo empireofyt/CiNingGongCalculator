@@ -1,5 +1,5 @@
  /**
-     * 进行运算
+     * 进行运算，返回结果
      * @return  返回结果
      */
     private String getResult() {
