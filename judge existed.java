@@ -3,8 +3,7 @@
                 if (!existedText.contains("e")) {
                     if (judgeExpression()) {
                         existedText = getResult();
-                        if (existedText.equals("error")){
-
+                        if (existedText.equals("error
                         } else {
                             existedText += "-";
                         }
@@ -15,12 +14,12 @@
                         }
 
                         if ((existedText.substring(existedText.length() - 1)).equals("+")) {
-//                    Log.d("Anonymous", "onClick: " + "进入减法方法");
+//                    Log.d("Anonymous", "onClick: " + "杩涘叆鍑忔硶鏂规硶");
                             existedText = existedText.replace("+", "-");
-                        } else if ((existedText.substring(existedText.length() - 1)).equals("×")) {
-                            existedText = existedText.replace("×", "-");
-                        } else if ((existedText.substring(existedText.length() - 1)).equals("÷")) {
-                            existedText = existedText.replace("÷", "-");
+                        } else if ((existedText.substring(existedText.length() - 1)).equals("脳")) {
+                            existedText = existedText.replace("脳", "-");
+                        } else if ((existedText.substring(existedText.length() - 1)).equals("梅")) {
+                            existedText = existedText.replace("梅", "-");
                         } else if (!(existedText.substring(existedText.length() - 1)).equals("-")) {
                             existedText += "-";
                         }
@@ -37,7 +36,7 @@
                         if (existedText.equals("error")){
 
                         } else {
-                            existedText += "×";
+                            existedText += "脳";
                         }
 
                     } else {
@@ -47,13 +46,13 @@
                         }
 
                         if ((existedText.substring(existedText.length() - 1)).equals("+")) {
-                            existedText = existedText.replace("+", "×");
+                            existedText = existedText.replace("+", "脳");
                         } else if ((existedText.substring(existedText.length() - 1)).equals("-")) {
-                            existedText = existedText.replace("-", "×");
-                        } else if ((existedText.substring(existedText.length() - 1)).equals("÷")) {
-                            existedText = existedText.replace("÷", "×");
-                        } else if (!(existedText.substring(existedText.length() - 1)).equals("×")) {
-                            existedText += "×";
+                            existedText = existedText.replace("-", "脳");
+                        } else if ((existedText.substring(existedText.length() - 1)).equals("梅")) {
+                            existedText = existedText.replace("梅", "脳");
+                        } else if (!(existedText.substring(existedText.length() - 1)).equals("脳")) {
+                            existedText += "脳";
                         }
                     }
                 } else {
@@ -68,7 +67,7 @@
                         if (existedText.equals("error")){
 
                         } else {
-                            existedText += "÷";
+                            existedText += "梅";
                         }
 
                     } else {
@@ -78,6 +77,6 @@
                         }
 
                         if ((existedText.substring(existedText.length() - 1)).equals("+")) {
-                            existedText = existedText.replace("+", "÷");
+                            existedText = existedText.replace("+", "梅");
                         } else if ((existedText.substring(existedText.length() - 1)).equals("-")) {
                             e
