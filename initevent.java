@@ -46,17 +46,17 @@ public class initevent extends ActionBarActivity {
     private boolean isCounted = false;
     /**
      * 以负号开头，且运算符不是是减号
-     * 例如：-21×2
+     * 例：-21×2
      */
     private boolean startWithOperator = false;
     /**
      * 以负号开头，且运算符是减号
-     * 例如：-21-2
+     * 例：-21-2
      */
     private boolean startWithSubtract = false;
     /**
      * 不以负号开头，且包含运算符
-     * 例如：21-2
+     * 例：21-2
      */
     private boolean noStartWithOperator = false;
     private void initEvent() {
