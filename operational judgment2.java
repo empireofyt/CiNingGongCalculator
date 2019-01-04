@@ -1,7 +1,6 @@
   /**
-             * 如果数据长度大于等于10位，进行科学计数
-             *
-             * 如果有小数点，再判断小数点前是否有十个数字，有则进行科学计数
+             * 濡傛灉鏁版嵁闀垮害澶т簬绛変簬10浣嶏紝杩涜绉戝璁℃暟
+             * 濡傛灉鏈夊皬鏁扮偣锛屽啀鍒ゆ柇灏忔暟鐐瑰墠鏄惁鏈夊崄涓暟瀛楋紝鏈夊垯杩涜绉戝璁℃暟
              */
             if (tempResult.length() >= 10) {
                 tempResult = String.format("%e", Double.parseDouble(tempResult));
