@@ -1,25 +1,23 @@
 /**
-         * Èç¹ûÓĞÔËËã·û£¬Ôò½øĞĞÔËËã
-         * Ã»ÓĞÔËËã·û£¬Ôò°ÑÒÑ¾­´æÔÚµÄÊı¾İÔÙ´«³öÈ¥
+         * å¦‚æœæœ‰è¿ç®—ç¬¦ï¼Œåˆ™è¿›è¡Œè¿ç®—
+         * æ²¡æœ‰è¿ç®—ç¬¦ï¼Œåˆ™æŠŠå·²ç»å­˜åœ¨çš„æ•°æ®å†ä¼ å‡ºå»
          */
         if ( startWithOperator || noStartWithOperator || startWithSubtract) {
 
             if (existedText.contains("+")) {
-                /**
-                 * ÏÈ»ñÈ¡Á½¸ö²ÎÊı
-                 */
+                
                 param1 = existedText.substring(0, existedText.indexOf("+"));
                 param2 = existedText.substring(existedText.indexOf("+") + 1);
                 /**
-                 * Èç¹ûµÚ¶ş¸ö²ÎÊıÎª¿Õ£¬Ôò»¹ÊÇÏÔÊ¾µ±Ç°×Ö·û
+                 * å¦‚æœç¬¬äºŒä¸ªå‚æ•°ä¸ºç©ºï¼Œåˆ™è¿˜æ˜¯æ˜¾ç¤ºå½“å‰å­—ç¬¦
                  */
                 if (param2.equals("")){
                     tempResult = existedText;
                 } else {
                     /**
-                     * ×ª»»StringÎªDouble
-                     * ¼ÆËãºóÔÙ×ª»»³ÉStringÀàĞÍ
-                     * ½øĞĞÕıÔò±í´ïÊ½´¦Àí
+                     * è½¬æ¢Stringä¸ºDouble
+                     * è®¡ç®—åå†è½¬æ¢æˆStringç±»å‹
+                     * è¿›è¡Œæ­£åˆ™è¡¨è¾¾å¼å¤„ç†
                      */
                     arg1 = Double.parseDouble(param1);
                     arg2 = Double.parseDouble(param2);
@@ -29,10 +27,10 @@
                 }
 
 
-            } else if (existedText.contains("¡Á")) {
+            } else if (existedText.contains("Ã—")) {
 
-                param1 = existedText.substring(0, existedText.indexOf("¡Á"));
-                param2 = existedText.substring(existedText.indexOf("¡Á") + 1);
+                param1 = existedText.substring(0, existedText.indexOf("Ã—"));
+                param2 = existedText.substring(existedText.indexOf("Ã—") + 1);
 
                 if (param2.equals("")){
                     tempResult = existedText;
@@ -44,10 +42,10 @@
                     tempResult = subZeroAndDot(tempResult);
                 }
 
-            } else if (existedText.contains("¡Â")) {
+            } else if (existedText.contains("Ã·")) {
 
-                param1 = existedText.substring(0, existedText.indexOf("¡Â"));
-                param2 = existedText.substring(existedText.indexOf("¡Â") + 1);
+                param1 = existedText.substring(0, existedText.indexOf("Ã·"));
+                param2 = existedText.substring(existedText.indexOf("Ã·") + 1);
 
                 if (param2.equals("0")){
                     tempResult = "error";
@@ -64,9 +62,9 @@
             } else if (existedText.contains("-")) {
 
                 /**
-                 * ÕâÀïÊÇÒÔ×îºóÒ»¸ö - ºÅÎª·Ö¸ôÈ¥È¡³öÁ½¸ö²ÎÊı
-                 * ½øµ½Õâ¸ö·½·¨£¬±ØĞëÂú×ãÓĞÔËËã¹«Ê½
-                 * ¶øÓÖ±ÜÃâÁËµÚÒ»¸ö²ÎÊıÊÇ¸ºÊıµÄÇé¿ö
+                 * è¿™é‡Œæ˜¯ä»¥æœ€åä¸€ä¸ª - å·ä¸ºåˆ†éš”å»å–å‡ºä¸¤ä¸ªå‚æ•°
+                 * è¿›åˆ°è¿™ä¸ªæ–¹æ³•ï¼Œå¿…é¡»æ»¡è¶³æœ‰è¿ç®—å…¬å¼
+                 * è€Œåˆé¿å…äº†ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯è´Ÿæ•°çš„æƒ…å†µ
                  */
                 param1 = existedText.substring(0, existedText.lastIndexOf("-"));
                 param2 = existedText.substring(existedText.lastIndexOf("-") + 1);
