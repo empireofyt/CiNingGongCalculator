@@ -62,5 +62,5 @@ case R.id.dot_btn:
                 }
 
 
-                break;
+                break；
             case R.id.percent_btn:
