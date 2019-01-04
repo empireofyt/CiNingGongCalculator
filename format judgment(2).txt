@@ -1,0 +1,56 @@
+if (existedText.substring(existedText.length()-1).equals("+") ||
+                        existedText.substring(existedText.length()-1).equals("-") ||
+                        existedText.substring(existedText.length()-1).equals("×") ||
+                        existedText.substring(existedText.length()-1).equals("÷")){
+                    existedText += s;
+                } else {
+                    if (param2.contains(".")){
+                        if (param2.length() >= 10){
+
+                        } else {
+                            existedText += s;
+                        }
+                    } else {
+                        if (param2.length() >= 9){
+
+                        } else {
+                            existedText += s;
+                        }
+                    }
+                }
+            } else {
+                /**
+                 * 不包括运算符时 一个数字
+                 */
+                if (existedText.contains(".")){
+                    if (existedText.length() >= 10){
+
+                    } else {
+                        existedText += s;
+                    }
+                } else {
+                    if (existedText.length() >= 9){
+
+                    } else {
+                        existedText += s;
+                    }
+                }
+            }
+
+            isCounted = false;
+
+        } else {
+
+            existedText = s;
+            isCounted = false;
+
+        } 
+
+
+        return existedText;
+    }
+
+
+
+        return existedText;
+    }
