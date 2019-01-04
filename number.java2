@@ -1,5 +1,5 @@
 /**
-             * Êý×Ö
+             * ÃŠÃ½Ã—Ã–
              */
             case R.id.num_zero:
                 existedText = isOverRange(existedText,"0");
@@ -30,4 +30,4 @@
                 break;
             case R.id.num_nine:
                 existedText = isOverRange(existedText,"9");
-                break;
+                breakï¼›
